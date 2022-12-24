@@ -400,11 +400,11 @@
 				<form action="#" class="contacts__form" method="post">
 					<div class="input__line">
 						<label for="input-name">Meno:</label>
-						<input id="input-name" autocomplete="off" type="text" name="meno" data-error="Ошибка" placeholder="Meno" class="input">
+						<input id="input-name" autocomplete="off" type="text" name="meno" placeholder="Meno" class="input">
 					</div>
 					<div class="input__line">
 						<label for="input-tel">Telefon:</label>
-						<input data-required pattern="[+]{1}[0-9]{11}" minlength="12" id="input-tel" autocomplete="off" type="tel" name="telefon" data-error="Format(+12345234567)" placeholder="Telefon" class="input">
+						<input required pattern="[+]{1}[0-9]{11}" minlength="10" id="input-tel" autocomplete="off" type="tel" name="telefon" data-error="Format(+12345234567)" placeholder="Telefon" class="input">
 					</div>
 					<div class="input__line">
 						<label for="input-email">*Email:</label>
