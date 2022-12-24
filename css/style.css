@@ -461,6 +461,10 @@ svg path {
           justify-content: center;
 }
 
+.footer__mail ._form-error label {
+  border: 1px solid red;
+}
+
 .footer__mail .input__line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1512,6 +1516,17 @@ svg path {
           box-shadow: 0 0 0.625rem var(--color-signature);
   border: 0.0625rem solid var(--color-signature);
   outline: transparent;
+}
+
+.contacts__form .input__line .form__error {
+  font-size: 0.875rem;
+  color: rgb(255, 5, 5);
+}
+
+.contacts__form ._form-error .input {
+  border: 0.0625rem solid red;
+  -webkit-box-shadow: 0 0 0.25rem rgb(255, 56, 56);
+          box-shadow: 0 0 0.25rem rgb(255, 56, 56);
 }
 
 .contacts__button {

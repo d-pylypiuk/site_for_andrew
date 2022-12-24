@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221224211312">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221224223038">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -403,12 +403,12 @@
 						<input id="input-name" autocomplete="off" type="text" name="meno" data-error="Ошибка" placeholder="Meno" class="input">
 					</div>
 					<div class="input__line">
-						<label for="input-tel">Telefon: format(+12345234567)</label>
-						<input pattern="[+]" id="input-tel" autocomplete="off" type="tel" name="telefon" placeholder="Telefon" class="input">
+						<label for="input-tel">Telefon:</label>
+						<input data-required pattern="[+]{1}[0-9]{11}" minlength="12" id="input-tel" autocomplete="off" type="tel" name="telefon" data-error="Format(+12345234567)" placeholder="Telefon" class="input">
 					</div>
 					<div class="input__line">
 						<label for="input-email">*Email:</label>
-						<input required id="input-email" autocomplete="off" type="email" name="email:" data-error="Ошибка" placeholder="Email" class="input">
+						<input data-required id="input-email" autocomplete="off" type="email" name="email:" data-error="Prosím napíšte email" placeholder="Email" class="input">
 					</div>
 					<div class="contacts__info">
 						Polia označené (*) sú povinné
@@ -434,11 +434,15 @@
 						<div class="footer__text">
 							Prihláste sa na odber nášho (zriedkavého) newslettera, kde zdieľame novinky o pripravovaných zoznamoch a projektoch.
 						</div>
-						<form action="#" class="footer__mail">
+						<form action="#" method="get" class="footer__mail">
+
 							<label id="input-line" class="input__line" for="footer-mail">
-								<input placeholder="Email" id="footer-mail" type="email">
+
+								<input required id="input-email" autocomplete="off" type="email" name="email:" placeholder="Email" class="input">
+
 								<button class="input__btn_gray">Odoslat’</button>
 							</label>
+
 						</form>
 					</div>
 
@@ -458,7 +462,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20221224211312"></script>
+	<script src="js/app.min.js?_v=20221224223038"></script>
 </body>
 
 </html>
